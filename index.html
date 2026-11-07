@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wasaga Barber Shop — Old-School Barbershop in Wasaga Beach Since 1996</title>
+<style>:root{--bg:#fdf6e9;--ink:#274b4f;--acc:#0f766e;--sand:#f2dfba;--coral:#e0654a}body{margin:0;font-family:Karla,Arial,sans-serif;background:var(--bg);color:var(--ink)}h1{font-family:'Alfa Slab One',Georgia,serif;font-weight:400}h2{font-family:'Alfa Slab One',Georgia,serif;font-weight:400;font-size:20px;color:var(--acc)}header{background:var(--acc);color:#fff;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}.brand{font-family:'Alfa Slab One',Georgia,serif;font-size:24px}.badge{display:inline-block;background:var(--coral);color:#fff;padding:5px 14px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:1px}.hero{padding:36px 20px;max-width:900px;margin:0 auto}.hero h1{font-size:36px;margin:10px 0}.btn{display:inline-block;background:var(--coral);color:#fff;padding:12px 26px;text-decoration:none;font-weight:700;border-radius:6px}main{max-width:900px;margin:0 auto;padding:8px 20px 26px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{background:#fff;border:2px solid var(--sand);border-radius:10px;padding:14px 16px}table{width:100%;border-collapse:collapse}td{padding:7px 4px;border-bottom:2px solid var(--sand)}form{display:grid;gap:10px;max-width:520px}input,select,textarea{width:100%;padding:10px;border:2px solid var(--sand);border-radius:8px;font:inherit}button{background:var(--acc);color:#fff;border:0;padding:12px;font:inherit;font-weight:700;cursor:pointer;border-radius:6px}.disc,.formnote{font-size:13px;opacity:.75}.ref{font-weight:800;color:var(--coral)}footer{padding:22px;font-size:14px;background:var(--sand);text-align:center}a{color:var(--acc)}</style>
+</head>
+<body>
+<header><div class="brand">Wasaga Barber Shop</div><a class="btn" href="tel:+17054291330">Call the shop: (705) 429-1330</a></header>
+<section class="hero"><h1>Old-school barbering since 1996 — home of the hot shave</h1><p>Wasaga Barber Shop is a family-run, old-school barber shop on Mosley Street in Wasaga Beach, Ontario, established in 1996. Walk in for a cut — and relax with the shop's specialty, a hot shave. Cash only.</p><p><a class="btn" href="tel:+17054291330">(705) 429-1330</a></p></section>
+<main>
+<h2 id="services">Services</h2>
+<div class="grid"><div class="card">Men's Haircut</div><div class="card">Children's Haircut</div><div class="card">Hot Towel Shave</div><div class="card">Beard Trim</div><div class="card">Straight Razor Finish</div><div class="card">Head Shave</div></div>
+<h2 id="hours">Hours</h2>
+<table><tr><td>Monday</td><td>9:00 AM – 6:00 PM</td></tr><tr><td>Tuesday</td><td>9:00 AM – 6:00 PM</td></tr><tr><td>Wednesday</td><td>9:00 AM – 6:00 PM</td></tr><tr><td>Thursday</td><td>9:00 AM – 6:00 PM</td></tr><tr><td>Friday</td><td>9:00 AM – 6:00 PM</td></tr><tr><td>Saturday</td><td>9:00 AM – 4:00 PM</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table>
+<h2 id="visit">Visit Us</h2>
+<p>1295 Mosley St #4, Wasaga Beach, ON L9Z 2E4<br><a href="tel:+17054291330">(705) 429-1330</a></p>
+<h2 id="book">Request an Appointment</h2>
+<form id="req" novalidate>
+<label>Your name<input required type="text" name="name" placeholder="Your name"></label>
+<label>Phone<input required type="tel" name="phone" placeholder="(000) 000-0000"></label>
+<label>Service you'd like<select name="service"><option>Men's Haircut</option><option>Children's Haircut</option><option>Hot Towel Shave</option><option>Beard Trim</option><option>Straight Razor Finish</option><option>Head Shave</option></select></label>
+<label>Message (optional)<textarea name="msg" rows="3"></textarea></label>
+<button type="submit">Send request</button>
+<p class="formnote">This concept form doesn't send anything yet — it shows a local reference to demonstrate the flow.</p>
+<p class="disc">Concept preview — this is a sample website concept, not Wasaga Barber Shop's official site.</p>
+<p id="ref" class="ref" hidden></p>
+</form>
+<script>
+document.getElementById('req').addEventListener('submit',function(e){e.preventDefault();
+var r='WBS54-'+Math.floor(10000+Math.random()*90000);
+var el=document.getElementById('ref');el.hidden=false;
+el.textContent="Thanks! Your request reference is "+r+". On the live site, this request would go straight to the shop.";});
+</script>
+</main>
+<footer><p>Wasaga Barber Shop — 1295 Mosley St #4, Wasaga Beach, ON L9Z 2E4 — <a href="tel:+17054291330">(705) 429-1330</a></p><p>Concept preview — this is a sample website concept, not Wasaga Barber Shop's official site.</p></footer>
+</body>
+</html>
